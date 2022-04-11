@@ -4,7 +4,6 @@ install:
 	cp laravel/.env.example laravel/.env
 	sudo docker-compose up -d --build
 	sudo docker-compose exec $(service_name) composer install
-	make npm-run
 	sudo docker-compose exec $(service_name) php artisan key:generate
 	make cache
 	make migrate-fresh
@@ -27,13 +26,6 @@ cache:
 	sudo docker-compose exec $(service_name) php artisan clear-compiled
 	sudo docker-compose exec $(service_name) php artisan optimize
 	sudo docker-compose exec $(service_name) php artisan config:cache
-
-npm-run:
-	sudo docker-compose exec $(service_name) npm install
-	sudo docker-compose exec $(service_name) npm run dev
-npm-watch:
-	sudo docker-compose exec $(service_name) npm install
-	sudo docker-compose exec $(service_name) npm run watch
 
 migrate:
 	sudo docker-compose exec $(service_name) php artisan migrate
