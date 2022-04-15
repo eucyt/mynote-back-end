@@ -112,6 +112,8 @@
       <path value="$PROJECT_DIR$/laravel/vendor/sebastian/code-unit" />
       <path value="$PROJECT_DIR$/laravel/vendor/sebastian/environment" />
       <path value="$PROJECT_DIR$/laravel/vendor/laravel/breeze" />
+      <path value="$PROJECT_DIR$/laravel/vendor/davidbadura/faker-markdown-generator" />
+      <path value="$PROJECT_DIR$/laravel/vendor/davidbadura/markdown-builder" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0">
