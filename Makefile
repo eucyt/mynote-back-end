@@ -35,5 +35,8 @@ migrate-fresh:
 	sudo docker-compose exec $(service_name) composer dump-autoload
 	sudo docker-compose exec $(service_name) php artisan migrate:fresh --seed
 
+test:
+	sudo docker-compose exec $(service_name) php artisan test
+
 bash:
 	sudo docker-compose exec $(service_name) bash
