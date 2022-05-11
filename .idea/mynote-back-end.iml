@@ -10,6 +10,12 @@
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/davidbadura/faker-markdown-generator" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/davidbadura/markdown-builder" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/symfony/polyfill-iconv" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/symfony/polyfill-php73" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/swiftmailer/swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/opis/closure" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/facade/ignition" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/facade/flare-client-php" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
