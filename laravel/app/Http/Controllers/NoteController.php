@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\NoteRequest;
 use App\Http\Resources\NoteResource;
 use App\Models\Note;
-use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
@@ -58,11 +57,11 @@ class NoteController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param Request $request
+     * @param NoteRequest $request
      * @param Note $note
      * @return Response
      */
-    public function update(Request $request, Note $note)
+    public function update(NoteRequest $request, Note $note)
     {
         $note->fill($request->all())->save();
         return response()->noContent();
