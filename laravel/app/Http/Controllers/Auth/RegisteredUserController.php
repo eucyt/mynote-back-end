@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
@@ -15,8 +16,8 @@ class RegisteredUserController extends Controller
     /**
      * Handle an incoming registration request.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param \Illuminate\Http\Request $request
+     * @return Response
      *
      * @throws \Illuminate\Validation\ValidationException
      */
@@ -38,6 +39,18 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
+        return response()->noContent();
+    }
+
+
+    /**
+     * delete account
+     * @param Request $request
+     * @return Response
+     */
+    public function destroy(Request $request)
+    {
+        $request->user()->delete();
         return response()->noContent();
     }
 }
