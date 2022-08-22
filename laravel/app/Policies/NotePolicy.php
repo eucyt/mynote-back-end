@@ -91,4 +91,28 @@ class NotePolicy
     {
         return false;
     }
+
+
+    /**
+     * Determine whether the user can publish the model.
+     * @param User $user
+     * @param Note $note
+     * @return bool
+     */
+    public function publish(User $user, Note $note): bool
+    {
+        return $user->is_publishable && optional($note->user)->id === $user->id;
+    }
+
+
+    /**
+     * Determine whether the user can unpublish the model.
+     * @param User $user
+     * @param Note $note
+     * @return bool
+     */
+    public function unpublish(User $user, Note $note): bool
+    {
+        return $user->is_publishable && optional($note->user)->id === $user->id;
+    }
 }
