@@ -21,7 +21,8 @@ class NoteResource extends JsonResource
             'body' => $this->body,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
-            'published_at' => $this->published_at
+            'published_at' => $this->published_at,
+            'published_id' => $this->published_id,
         ];
     }
 }

@@ -46,7 +46,7 @@ class NoteService
             $note->published_id = Str::uuid();
         }
 
-        return $note->update() ? route('notes.published', $note->published_id) : null;
+        return $note->update() ? $note->published_id : null;
     }
 
 
