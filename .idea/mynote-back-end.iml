@@ -123,6 +123,7 @@
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/asm89/stack-cors" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/fruitcake/laravel-cors" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/askedio/laravel-soft-cascade" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/predis/predis" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
