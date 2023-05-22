@@ -117,7 +117,6 @@
       <path value="$PROJECT_DIR$/laravel/vendor/asm89/stack-cors" />
       <path value="$PROJECT_DIR$/laravel/vendor/fruitcake/laravel-cors" />
       <path value="$PROJECT_DIR$/laravel/vendor/askedio/laravel-soft-cascade" />
-      <path value="$PROJECT_DIR$/laravel/vendor/predis/predis" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.4">
